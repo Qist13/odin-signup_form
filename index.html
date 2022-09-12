@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="image">
+      <div class="img-description">
+        <p class="img-info">
+          Photo by <u>Halie West</u> on
+          <a href="https://unsplash.com/photos/25xggax4bSA" target="_blank"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+      <div class="img-label">
+        <img src="./images/odin-logo.png" alt="Odin Logo" />
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-info">
+        This is not a real online service! <br />
+        You know you need something like this your life to help you realize your
+        deepest dreams. <br />
+        Sign up <i>now</i> to get started.
+        <br />
+        <br />
+        You <i>know</i> you want to.
+      </div>
+      <div class="content-form">
+        <form action="">
+          <h1>Let's do this!</h1>
+          <div class="inputs">
+            <div class="inputs-left">
+              <label for="first-name" class="form-label">*FIRST NAME</label>
+              <div class="first-name">
+                <input
+                  type="text"
+                  class="form-input"
+                  id="first-name"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <label for="email" class="form-label">*EMAIL</label>
+              <div class="email">
+                <input
+                  type="email"
+                  class="form-input"
+                  id="email"
+                  placeholder="firstlast@mail.com"
+                  required
+                />
+              </div>
+              <label for="password" class="form-label">*PASSWORD</label>
+              <div class="password">
+                <input
+                  type="password"
+                  class="form-input"
+                  id="password"
+                  placeholder="Password"
+                  minlength="6"
+                  maxlength="20"
+                  required
+                />
+              </div>
+            </div>
+            <div class="inputs-right">
+              <label for="last-name" class="form-label">*LAST NAME</label>
+              <div class="last-name">
+                <input
+                  type="text"
+                  class="form-input"
+                  id="last-name"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <label for="phone-number" class="form-label">PHONE NUMBER</label>
+              <div class="phone-number">
+                <input
+                  type="tel"
+                  class="form-input"
+                  id="phone-number"
+                  placeholder="(XXX)XXX-XXXX"
+                  pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+                />
+              </div>
+              <label for="confirm-password" class="form-label"
+                >*CONFIRM PASSWORD</label
+              >
+              <div class="confirm-password">
+                <input
+                  type="password"
+                  class="form-input"
+                  id="confirm-password"
+                  placeholder="Confirm Password"
+                  minlength="6"
+                  maxlength="20"
+                  required
+                />
+              </div>
+            </div>
+            <div class="pswd-req">
+              <output id="pswd-errorlist">
+                <ul id="errorlist"></ul>
+              </output>
+            </div>
+          </div>
+          <div class="advertisement">
+            <input type="checkbox" id="advertisement" name="ad" checked />
+            <label for="advertisement"
+              >Send me promotional material and news</label
+            >
+          </div>
+          <div class="content-btn">
+            <button class="btn-register">Create Account</button>
+          </div>
+        </form>
+      </div>
+      <div class="content-login">
+        Already have an account? <a href="#">Log in</a>
+      </div>
+    </div>
+  </body>
+</html>
